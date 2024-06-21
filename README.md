@@ -7,12 +7,22 @@
 
 ### Install yay
 
-`git clone https://aur.archlinux.org/yay.git`<br />
-`cd yay`<br />
-`makepkg -si`<br />
+```bash
+git clone https://aur.archlinux.org/yay.git
+```
+
+```bash
+cd yay
+```
+
+```bash
+makepkg -si
+```
 
 # Oh My Posh
 
 ## Step 1: Install Oh My Posh
 
-`yay -S oh-my-posh`<br />
+```bash
+yay -S oh-my-posh
+```
