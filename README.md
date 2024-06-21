@@ -9,13 +9,7 @@
 
 ```bash
 git clone https://aur.archlinux.org/yay.git
-```
-
-```bash
 cd yay
-```
-
-```bash
 makepkg -si
 ```
 
