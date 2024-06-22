@@ -35,6 +35,12 @@ fc-cache -fv
 
 4. Set the font as your default terminal emulator font
 
+### Download GNU stow
+
+```bash
+yay -S stow
+```
+
 # ZSH
 
 ## Step 1: Install ZSH
