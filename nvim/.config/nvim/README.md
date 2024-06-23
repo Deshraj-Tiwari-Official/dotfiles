@@ -1,19 +1,25 @@
 # Introduction
-This is a fork of NVChad and is setup for easy use of NextJS with language servers like tailwindcss, eslint, typescript and more.
-To use this, make sure to install neovim.
+
+> This is NVChad and is setup for easy use of NextJS with language servers like tailwindcss, eslint, typescript and more.
+
+## Step 1: Install Neovim
+
 ```bash
 yay -S neovim
 ```
-# Installation
-Use this command to clone this repo in your neovim configuration.
+
+## Step 2: Clone this repository
+
 ```bash
 git clone https://github.com/Deshraj-Tiwari-Official/NvChad-NextJS.git ~/.config/nvim && nvim
 ```
 
-After lazy installs all the necessary packages, run these commands in neovim:
+## Step 3: After lazy installs all the necessary packages, run these commands in neovim:
+
 ```vim
 :MasonInstallAll
 ```
+
 ```vim
 :TSInstallAll
 ```

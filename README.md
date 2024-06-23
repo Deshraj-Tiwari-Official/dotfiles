@@ -41,41 +41,9 @@ fc-cache -fv
 yay -S stow
 ```
 
-# ZSH
+# Setup your dev environment
 
-## Step 1: Install ZSH
+Check out the README.md files of each one to set them up one by one.
 
-```bash
-yay -S zsh
-```
-
-## Step 2: Set as your default shell
-
-```bash
-chsh <username>
-# /bin/zsh  -- location of the installation
-```
-
-## Step 3: Install necessary things
-
-```bash
-# zinit
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-```
-
-## Step 4: Stow the zsh package from the ~/dotfiles directory
-
-```bash
-rm ~/.zshrc
-cd ~/dotfiles
-stow zsh
-source ~/.zshrc
-```
-
-# Oh My Posh
-
-## Step 1: Install Oh My Posh
-
-```bash
-yay -S oh-my-posh
-```
+1. [ZSH](./zsh/README.md)
+2. [Neovim](./nvim/.config/nvim/README.md)
