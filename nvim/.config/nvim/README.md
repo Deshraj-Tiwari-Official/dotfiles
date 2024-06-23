@@ -8,10 +8,12 @@
 yay -S neovim
 ```
 
-## Step 2: Clone this repository
+## Step 2: Stow this directory
 
 ```bash
-git clone https://github.com/Deshraj-Tiwari-Official/NvChad-NextJS.git ~/.config/nvim && nvim
+cd ~/dotfiles
+rm -rf ~/.config/nvim
+stow nvim
 ```
 
 ## Step 3: After lazy installs all the necessary packages, run these commands in neovim:
