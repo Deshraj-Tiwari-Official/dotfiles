@@ -17,7 +17,7 @@ chsh <username>
 # /bin/zsh  -- location of the installation
 ```
 
-## Step 3: Install necessary things
+## Step 3: Install Package Manager
 
 ```bash
 # zinit

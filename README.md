@@ -12,5 +12,6 @@ sudo setup.sh
 
 Check out the README.md files of each one to set them up one by one.
 
-1. [ZSH](./zsh/README.md)
-2. [Neovim](./nvim/.config/nvim/README.md)
+1. [Alacritty](./alacritty/.config/alacritty/README.md)
+2. [ZSH](./zsh/README.md)
+3. [Neovim](./nvim/.config/nvim/README.md)

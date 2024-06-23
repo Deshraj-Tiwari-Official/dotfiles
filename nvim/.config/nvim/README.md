@@ -12,7 +12,6 @@ yay -S neovim
 
 ```bash
 cd ~/dotfiles
-rm -rf ~/.config/nvim
 stow nvim
 ```
 
