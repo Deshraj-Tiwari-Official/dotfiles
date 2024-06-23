@@ -14,3 +14,5 @@ yay -S alacritty
 cd ~/dotfiles
 stow alacritty
 ```
+
+Now you can simply open alacritty and use it.
