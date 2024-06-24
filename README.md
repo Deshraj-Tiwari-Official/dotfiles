@@ -1,4 +1,5 @@
-# Run the script (isntall curl if not installed by default)
+# Run the script 
+## (install curl if not installed by default)
 
 > This is your Arch Linux post install guide and this would setup all the things required for your dotfiles as well.
 > [!NOTE]
