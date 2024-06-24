@@ -13,7 +13,7 @@ yay -S zsh
 ## Step 2: Set as your default shell
 
 ```bash
-chsh <username>
+chsh $(whoami)
 # /bin/zsh  -- location of the installation
 ```
 
