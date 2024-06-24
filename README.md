@@ -1,7 +1,8 @@
 # Run the script 
-## (install curl if not installed by default)
+(install curl if not installed by default)
 
-> This is your Arch Linux post install guide and this would setup all the things required for your dotfiles as well.
+This script will is an Arch Linux post install script, that sets up many things like a firewall, downloads more linux kernels, and also downloads and configures tools that are required by this repository and other necessary tools like bat, btop, fastfetch, etc., with custom configurations.
+
 > [!NOTE]
 > This will download a few packages and setup yay as the AUR helper.
 
