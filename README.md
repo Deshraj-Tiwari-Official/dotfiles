@@ -7,7 +7,7 @@ This script will is an Arch Linux post install script, that sets up many things 
 > This will download a few packages and setup yay as the AUR helper.
 
 ```bash
-curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/52ab69b219752bd4a9bf911073c25b3dee395566/setup.sh | bash
+curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/916edeb9b7c1b3f10e1f8456913162675e7caece/setup.sh | bash
 ```
 
 # Setup your dev environment
