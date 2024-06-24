@@ -1,11 +1,11 @@
-# Cloning this repo and running the initial seupt script
+# Run the script (isntall curl if not installed by default)
+
+> This is your Arch Linux post install guide and this would setup all the things required for your dotfiles as well.
+> [!NOTE]
+> This will download a few packages and setup yay as the AUR helper.
 
 ```bash
-cd
-git clone https://github.com/Deshraj-Tiwari-Official/dotfiles
-cd dotfiles
-chmod +x setup.sh
-sudo setup.sh
+curl -sSL https://gist.github.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw | bash
 ```
 
 # Setup your dev environment
