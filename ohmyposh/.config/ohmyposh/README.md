@@ -5,7 +5,7 @@
 ## Step 1: Install OhMyPosh
 
 ```bash
-curl -s https://ohmyposh.dev/install.sh | bash -s
+yay -S oh-my-posh
 ```
 
 ## Step 2: Stow this directory
