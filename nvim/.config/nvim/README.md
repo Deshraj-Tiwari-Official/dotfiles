@@ -5,7 +5,7 @@
 ## Step 1: Install Neovim
 
 ```bash
-yay -S neovim
+sudo dnf install neovim
 ```
 
 ## Step 2: Stow this directory
