@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install ZSH
 
 ```bash
-yay -S zsh
+sudo dnf install zsh
 ```
 
 ## Step 2: Set as your default shell
