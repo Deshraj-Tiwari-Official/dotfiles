@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install ZSH
 
 ```bash
-sudo dnf install zsh
+sudo pacman -S zsh
 ```
 
 ## Step 2: Set as your default shell
