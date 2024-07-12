@@ -10,6 +10,13 @@ alignment = 'left'
 newline = true
 
 [[blocks.segments]]
+type = 'python'
+style = 'plain'
+foreground = 'green'
+background = 'transparent'
+template = '({{ .Venv }}) '
+
+[[blocks.segments]]
 type = 'path'
 style = 'plain'
 background = 'transparent'
