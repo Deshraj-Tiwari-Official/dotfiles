@@ -5,7 +5,7 @@
 ## Step 1: Install Alacritty
 
 ```bash
-sudo nala -S alacritty
+sudo nala install alacritty
 ```
 
 ## Step 2: Stow this directory
