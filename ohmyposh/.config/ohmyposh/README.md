@@ -3,7 +3,7 @@
 > Oh my posh is a good replacement for oh my zsh as it went into life support mode.
 
 > [!NOTE]
-> You need to have homebrew setup and installed in Fedora.
+> You need to have homebrew setup and installed in Mint.
 
 ## Step 1: Install OhMyPosh
 
