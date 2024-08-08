@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install ZSH
 
 ```bash
-sudo nala -S zsh
+sudo nala install zsh
 ```
 
 ## Step 2: Set as your default shell
