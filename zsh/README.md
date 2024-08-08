@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install ZSH
 
 ```bash
-sudo pacman -S zsh
+sudo nala -S zsh
 ```
 
 ## Step 2: Set as your default shell
