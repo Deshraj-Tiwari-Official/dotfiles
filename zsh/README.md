@@ -21,7 +21,7 @@ chsh $(whoami)
 
 ```bash
 # zinit
-yay -S zinit
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 ```
 
 ## Step 4: Stow the zsh package from the ~/dotfiles directory
