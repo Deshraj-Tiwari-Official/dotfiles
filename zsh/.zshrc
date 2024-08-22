@@ -47,6 +47,7 @@ zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 
 ### Aliases
 alias ls='ls --color'
+alias tmux='tmux -u'
 
 ### Zoxide
 eval "$(zoxide init --cmd cd zsh)"
