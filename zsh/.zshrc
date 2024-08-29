@@ -28,6 +28,15 @@ zinit light zsh-users/zsh-autosuggestions
 ### Emacs keybndings
 bindkey -e
 
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 ### History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -62,3 +71,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$($HOME/.local/bin/oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
