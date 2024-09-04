@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install ZSH
 
 ```bash
-sudo nala install zsh
+sudo pacman install zsh
 ```
 
 ## Step 2: Set as your default shell
@@ -32,3 +32,11 @@ cd ~/dotfiles
 stow zsh
 source ~/.zshrc
 ```
+
+
+# After Install
+Some important things to remind you:
+- cd COMMAND uses Zoxide
+- cdi launches an interactive zoxide window using the fzf (fuzzyfinder)
+- you can zoxide edit to remove, increment or decrement a path, and zoxide add to add a new one without going in the directory
+- check out the aliases set in the .zshrc XD
