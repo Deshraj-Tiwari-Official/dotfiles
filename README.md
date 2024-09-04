@@ -1,8 +1,7 @@
 # Run the script 
 (install curl if not installed by default)
 
-This script will is an Arch Linux post install script, that sets up many things like a firewall, downloads more linux kernels, and also downloads and configures tools that are required by this repository and other necessary tools like bat, btop, fastfetch, etc., with custom configurations.
-
+This script will is an Arch Linux post install script,that downloads and configures tools that are required by this repository and other necessary tools.
 > [!NOTE]
 > This will download a few packages.
 
