@@ -36,7 +36,7 @@ source ~/.zshrc
 
 # After Install
 Some important things to remind you:
-- cd COMMAND uses Zoxide
-- cdi launches an interactive zoxide window using the fzf (fuzzyfinder)
-- you can zoxide edit to remove, increment or decrement a path, and zoxide add to add a new one without going in the directory
-- check out the aliases set in the .zshrc XD
+- cd = zoxide
+- cdi = zoxide (interactive)
+- yy = yazi
+- Check out the aliases set as well in the .zshrc file_
