@@ -7,7 +7,7 @@ Description:
 ## Step 1: Install Tmux 
 
 ```bash
-sudo nala install tmux
+sudo pacman -S tmux
 ```
 
 ## Step 2: Install tmp plugin manager 
@@ -34,5 +34,6 @@ tmux # To download the packages, press leader (Ctrl + <space>) followed by capit
 ```bash
 tmux source ~/.config/tmux/tmux.conf
 ```
-
+# After Install
+- Check out the config for shortcuts and all
 Here is a [Cheatsheet](https://tmuxcheatsheet.com/)
