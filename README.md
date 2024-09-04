@@ -7,7 +7,7 @@ This script will is an Arch Linux post install script, that sets up many things 
 > This will download a few packages.
 
 ```bash
-curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/e761ec7a66fe265bb2f5c2f3f9bdc21a6dc235d0/setup.sh | bash
+curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/0b3a0492f0078aca0d21ab501b8d204ee517e64a/setup.sh | bash
 ```
 
 # Setup your dev environment
