@@ -28,6 +28,9 @@ zinit light zsh-users/zsh-autosuggestions
 ### Setup fzf autocomplete
 source <(fzf --zsh)
 
+### Editor
+export EDITOR=nvim
+
 ### Emacs keybndings
 bindkey -e
 
