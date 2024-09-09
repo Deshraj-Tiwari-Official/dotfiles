@@ -1,3 +1,6 @@
+font_size 14.0
+font_family regular
+
 # The basic colors
 foreground              #cdd6f4
 background              #1e1e2e
@@ -68,12 +71,3 @@ color14 #94e2d5
 # white
 color7  #bac2de
 color15 #a6adc8
-
-
-# BEGIN_KITTY_FONTS
-font_size        12.0
-font_family      family="MesloLGL NF"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-# END_KITTY_FONTS

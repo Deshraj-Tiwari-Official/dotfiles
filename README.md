@@ -13,7 +13,7 @@ curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d
 
 Check out the README.md files of each one to set them up one by one.
 
-1. [Alacritty](./alacritty/.config/alacritty/README.md)
+1. [Kitty](./kitty/.config/kitty/README.md)
 2. [ZSH](./zsh/README.md)
 3. [OMP](./ohmyposh/.config/ohmyposh/README.md)
 4. [Tmux](./tmux/.config/tmux/README.md)
