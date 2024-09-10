@@ -64,6 +64,7 @@ zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 alias ls='ls --color'
 alias tmux='tmux -u'
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
+alias nf='nerdfetch'
 
 ### Zoxide
 eval "$(zoxide init --cmd cd zsh)"
