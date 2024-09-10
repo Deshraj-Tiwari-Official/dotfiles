@@ -15,6 +15,6 @@ Check out the README.md files of each one to set them up one by one.
 
 1. [Kitty](./kitty/.config/kitty/README.md)
 2. [ZSH](./zsh/README.md)
-3. [OMP](./ohmyposh/.config/ohmyposh/README.md)
+3. [Starship](./starship/.config/README.md)
 4. [Tmux](./tmux/.config/tmux/README.md)
 5. [Cava](./cava/.config/cava/README.md)
