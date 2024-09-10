@@ -10,7 +10,7 @@ Description:
 sudo pacman -S starship
 ```
 
-## Step 4: Stow the starship package from the ~/dotfiles directory
+## Step 2: Stow the starship package from the ~/dotfiles directory
 
 ```bash
 cd ~/dotfiles
