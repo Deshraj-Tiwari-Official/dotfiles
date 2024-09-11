@@ -10,9 +10,6 @@ config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 12
 
--- Only keep the resizable border
-config.window_decorations = "RESIZE"
-
 -- Tab bar
 config.enable_tab_bar = false
 config.window_frame = {
