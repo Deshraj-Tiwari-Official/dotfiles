@@ -18,3 +18,4 @@ Check out the README.md files of each one to set them up one by one.
 3. [Starship](./starship/.config/README.md)
 4. [Tmux](./tmux/.config/tmux/README.md)
 5. [Cava](./cava/.config/cava/README.md)
+6. [Neovim](./nvim/.config/nvim/README.md)
