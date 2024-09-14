@@ -30,6 +30,7 @@ bash -c "$(curl --fail --show-error --silent --location https://raw.githubuserco
 rm ~/.zshrc
 cd ~/dotfiles
 stow zsh
+zsh
 source ~/.zshrc
 ```
 
