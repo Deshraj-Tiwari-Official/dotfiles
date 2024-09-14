@@ -25,8 +25,9 @@ stow tmux
 
 ## Step 4: Start Tmux and download packages
 
+- To download the packages, press leader (Ctrl + <space>) followed by capital I (shift + i) in tmux:
 ```bash
-tmux # To download the packages, press leader (Ctrl + <space>) followed by capital I (shift + i)
+tmux
 ```
 
 ## Step 5: Reload the config
