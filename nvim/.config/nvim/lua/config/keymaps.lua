@@ -1,4 +1,8 @@
-local map = vim.keymap.set
+local map = vim.keymap.set;
+
+-- Boilerplates
+vim.api.nvim_set_keymap("n", "<leader>ft", ":lua LoadTemplate()<CR>", { desc = "Load all boilerplates in telescope" ,noremap = true })
+
 -- Remove highlight search by pressing escape key
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -39,3 +43,12 @@ map("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { desc = "Move to Right TMUX
 map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "Preview Hunk" })
 map("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", { desc = "Line Blame Toggle" })
 map("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+
+-- Code Runner
+map('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
+map('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
+map('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
+map('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
+map('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
+map('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
+map('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
