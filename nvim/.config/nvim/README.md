@@ -10,5 +10,5 @@ sudo pacman -S neovim
 
 ```bash
 cd ~/dotfiles
-stow neovim
+stow nvim
 ```
