@@ -13,7 +13,7 @@ config.font_size = 12
 -- Tab bar
 config.enable_tab_bar = false
 config.window_frame = {
-	font = wezterm.font("MesloLGS Nerd Font Mono", { weight = "Bold" }),
+	font = wezterm.font("JetBrains Mono", { weight = "Bold" }),
 	font_size = 11,
 }
 -- Tab bar title
