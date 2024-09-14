@@ -24,8 +24,6 @@ stow tmux
 ```
 
 ## Step 4: Start Tmux and download packages
-
-- To download the packages, press leader (Ctrl + <space>) followed by capital I (shift + i) in tmux:
 ```bash
 tmux
 ```
@@ -35,7 +33,7 @@ tmux
 ```bash
 tmux source ~/.config/tmux/tmux.conf
 ```
-Now press leader (ctrl+space) followed by I (shift+I) to install the tpm plugins
+Now press leader (ctrl+<space>) followed by I (shift+I) to install the tpm plugins
 # After Install
 - Check out the config for shortcuts and all
 Here is a [Cheatsheet](https://tmuxcheatsheet.com/)
