@@ -5,7 +5,7 @@ vim.api.nvim_set_keymap("n", "<leader>ft", ":lua LoadTemplate()<CR>",
   { desc = "Load all boilerplates in telescope", noremap = true })
 
 -- INFO: FzfLua
-map("n", "<leader>fz", "<cmd>FzfLua<CR>",{ desc = "FzfLua" })
+map("n", "<leader>fz", "<cmd>FzfLua<CR>", { desc = "FzfLua" })
 map("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "Find Files" })
 map("n", "<leader>fb", "<cmd>FzfLua buffers<cr>", { desc = "Find Buffers" })
 map("n", "<leader>fg", "<cmd>FzfLua buffers<cr>", { desc = "Live Grep" })
@@ -57,3 +57,17 @@ map('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
 -- map('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
 -- map('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
 -- map('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
+
+-- INFO: NeoCodeium
+map("i", "<Tab>", function() require("neocodeium").accept() end, { desc = "NeoCodeium Accept" })
+map("i", "<C-w>", function() require("neocodeium").accept_word() end, { desc = "NeoCodeium Accept Word" })
+map("i", "<C-l>", function() require("neocodeium").accept_line() end, { desc = "NeoCodeium Accept Line" })
+map("i", "<C-j>", function() require("neocodeium").cycle_or_complete() end, { desc = "NeoCodeium Cycle" })
+map("i", "<C-k>", function() require("neocodeium").cycle_or_complete(-1) end, { desc = "NeoCodeium Cycle Backward" })
+map("i", "<C-e>", function() require("neocodeium").clear() end, { desc = "NeoCodeium Clear" })
+
+-- INFO: Nvim Spectre
+map('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
+map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
+map('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file"
+})

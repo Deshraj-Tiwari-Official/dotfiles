@@ -53,27 +53,10 @@ return {
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "luasnip" },
-          { name = "codeium" },
           { name = 'path' },
           { name = "buffer" },
         }),
       })
     end,
   },
-  {
-    "Exafunction/codeium.nvim",
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
-    },
-    config = function()
-        require("codeium").setup({})
-        -- Keymaps for Codeium
-        local opts = { expr = true, silent = true, desc = "Codeium Completion" }
-        vim.keymap.set("i", "<Tab>", function() return vim.fn["codeium#Accept"]() end, vim.tbl_extend("force", opts, { desc = "Codeium Accept" }))
-        vim.keymap.set("i", "<C-x>", function() return vim.fn["codeium#Clear"]() end, vim.tbl_extend("force", opts, { desc = "Codeium Clear" }))
-        vim.keymap.set("i", "<C-j>", function() return vim.fn end, vim.tbl_extend("force", opts, { desc = "Codeium Next Suggestion" }))
-        vim.keymap.set("i", "<C-k>", function() return vim.fn["codeium#CycleCompletions"](-1) end, vim.tbl_extend("force", opts, { desc = "Codeium Previous Suggestion" }))
-    end
-},
 }
