@@ -20,7 +20,7 @@ map("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 map("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- INFO: Neo Tree toggle
-map("n", "<C-n>", "<cmd>:Neotree filesystem toggle right<CR>", { desc = "Neotree toggle" })
+map("n", "<C-n>", "<cmd>:Neotree filesystem toggle left<CR>", { desc = "Neotree toggle" })
 
 -- INFO: LSP, Linters keymaps
 map("n", "K", vim.lsp.buf.hover, { desc = "Hover Docs" })

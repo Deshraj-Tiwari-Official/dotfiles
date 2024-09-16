@@ -66,6 +66,7 @@ alias tmux='tmux -u'
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
 alias nf='nerdfetch'
 alias vim='nvim'
+alias lg='lazygit'
 
 ### Zoxide
 eval "$(zoxide init --cmd cd zsh)"
