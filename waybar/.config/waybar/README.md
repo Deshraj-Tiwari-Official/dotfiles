@@ -16,3 +16,9 @@ cd ~/dotfiles
 stow waybar
 ```
 
+
+## Step 3: Add user to the input group for functionality
+
+```bash
+sudo usermod -aG input $(whoami)
+```
