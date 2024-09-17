@@ -60,6 +60,7 @@ zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 ### Aliases
 alias ls='ls --color'
 alias tmux='tmux -u'
+alias s='sesh connect $(sesh list | fzf)'
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
 alias vim='nvim'
 alias lg='lazygit'
