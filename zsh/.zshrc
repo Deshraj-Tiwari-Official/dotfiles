@@ -31,9 +31,6 @@ source <(fzf --zsh)
 ### Editor
 export EDITOR=nvim
 
-### Emacs keybndings
-bindkey -e
-
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -64,7 +61,6 @@ zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 alias ls='ls --color'
 alias tmux='tmux -u'
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
-alias nf='nerdfetch'
 alias vim='nvim'
 alias lg='lazygit'
 
@@ -81,8 +77,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(starship init zsh)"
-
-### Run nerdfetch each time shell is opened
-nf
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
