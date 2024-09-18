@@ -6,7 +6,7 @@ This script will is an Arch Linux post install script,that downloads and configu
 > This will download a few packages.
 
 ```bash
-curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/a1bc0b814d37db1fb3841749f6bf4bc00b0f1b75/setup.sh | bash
+curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/3fdc107b06773b68bcb8ca451a7d96f663c54668/setup.sh | bash
 ```
 
 # Setup your dev environment
@@ -24,4 +24,4 @@ Check out the README.md files of each one to set them up one by one.
 7. [Hypr](./hypr/.config/hypr/README.md)
 8. [Dunst](./dunst/.config/dunst/README.md)
 9. [Waybar](./waybar/.config/waybar/README.md)
-10. [Wofi](./wofi/.config/nvim/wofi.md)
+10. [Wofi](./wofi/.config/wofi/README.md)
