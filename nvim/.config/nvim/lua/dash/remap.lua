@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Open netrw
+vim.keymap.set("n", "<leader>pv", "<cmd>Ex<CR>")
+
 -- Clear highlighted search
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
