@@ -20,7 +20,7 @@ vim.g.maplocalleader = " "
 -- Helper function to load plugins from the plugins directory and subdirectories
 local function load_plugins_from_subdirs()
   local plugins = {}
-  local subdirs = { "lsp", "func" }  -- Add more subdirectories if needed
+  local subdirs = { "lsp", "goat", "peace_of_mind" }  -- Add more subdirectories if needed
   local config_path = vim.fn.stdpath("config") .. "/lua/plugins/"
 
   -- Load plugins from subdirectories
