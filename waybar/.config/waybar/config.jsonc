@@ -4,13 +4,12 @@
   "spacing": 6,
   "height": 35,
   "modules-left": ["hyprland/workspaces","hyprland/window"],
+  "modules-center": ["clock"],
   "modules-right": [
     "pulseaudio",
     "network",
     "backlight",
     "battery",
-    "clock",
-    "custom/power",
   ],
 
   // Modules configuration
@@ -28,7 +27,7 @@
   },
   "clock": {
     "timezone": "Asia/Kolkata",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip": false,
     "format": "{:%H:%M} ",
     "format-alt": "{:%Y-%m-%d}",
   },
