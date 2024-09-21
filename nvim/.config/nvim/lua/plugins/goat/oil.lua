@@ -11,7 +11,7 @@ return {
             view_options = {
                 show_hidden = true,
                 is_always_hidden = function (name, _)
-                    return name == ".git" or name == ".." or name == ".github"
+                    return name == ".git" or name == ".." or name == ".github" or name == ".vscode"
                 end,
             }
 		})
