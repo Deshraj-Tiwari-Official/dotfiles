@@ -1,9 +1,14 @@
+vim.api.nvim_set_hl(0, 'YankHighlight', { bg = '#B3BF93', fg = '#f8f8f2' })
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking text",
   callback = function()
-    vim.highlight.on_yank()
+    vim.highlight.on_yank({
+      higroup = 'YankHighlight',
+      timeout = 200,
+    })
   end,
 })
+vim.api.nvim_set_hl(0, 'Visual', { bg = '#5c6370', fg = '#f8f8f2' })
 vim.g.autoformat = true
 vim.opt.guicursor = ""
 vim.opt.expandtab = true
