@@ -7,10 +7,17 @@ return {
 		},
 		config = function()
 			require("luasnip.loaders.from_vscode").lazy_load()
+            local ls = require("luasnip")
+            ls.snippets = {
+                c = {
+                    ls.parser.parse_snippet("bp", "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\");\n\treturn 0;\n}"),
+                }
+            }
 		end,
 	},
 	{
 		"hrsh7th/cmp-nvim-lsp",
+        dependencies = {"hrsh7th/nvim-cmp"},
 		config = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
@@ -57,7 +64,6 @@ return {
 			})
 		end,
 	},
-	{"hrsh7th/nvim-cmp"},
 	{
 		"monkoose/neocodeium",
 		event = "VeryLazy",
