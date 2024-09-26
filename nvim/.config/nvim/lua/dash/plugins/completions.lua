@@ -45,7 +45,7 @@ return {
                         else
                             fallback() -- Fallback to default Tab behavior
                         end
-                    end, { "i", "s" }),
+                    end, { "i", "s", "c" }),
                     ["<S-Tab>"] = cmp.mapping(function(fallback)
                         if luasnip.jumpable(-1) then
                             luasnip.jump(-1) -- Jump back in snippet
@@ -54,7 +54,7 @@ return {
                         else
                             fallback() -- Fallback to default Shift+Tab behavior
                         end
-                    end, { "i", "s" }),
+                    end, { "i", "s", "c" }),
                 },
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
