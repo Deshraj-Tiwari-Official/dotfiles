@@ -29,6 +29,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
+					"clangd",
 				},
 			})
 		end,
@@ -38,6 +39,7 @@ return {
 		config = function()
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
+			lspconfig.clangd.setup({})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Docs" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
@@ -51,6 +53,7 @@ return {
 			null_ls.setup({
 				sources = {
 					null_ls.builtins.formatting.stylua,
+					null_ls.builtins.formatting.clang_format,
 				},
 			})
 		end,
