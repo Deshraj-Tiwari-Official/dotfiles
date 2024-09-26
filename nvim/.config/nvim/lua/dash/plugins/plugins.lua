@@ -1,5 +1,5 @@
 return {
-
+  "j-hui/fidget.nvim",
   {
     "RRethy/vim-illuminate",
     config = function()
