@@ -81,21 +81,34 @@ return {
         end,
     },
 
-    -- Neocodeium for AI-assisted completions
-    {
-        "monkoose/neocodeium",
-        event = "VeryLazy",
-        config = function()
-            local neocodeium = require("neocodeium")
-            neocodeium.setup()
+    -- -- Neocodeium for AI-assisted completions
+    -- {
+    --     "monkoose/neocodeium",
+    --     event = "VeryLazy",
+    --     config = function()
+    --         local neocodeium = require("neocodeium")
+    --         neocodeium.setup()
+    --
+    --         local map = vim.keymap.set
+    --         map("i", "<C-a>", neocodeium.accept, { desc = "NeoCodeium Accept" })
+    --         map("i", "<C-w>", neocodeium.accept_word, { desc = "NeoCodeium Accept Word" })
+    --         map("i", "<C-l>", neocodeium.accept_line, { desc = "NeoCodeium Accept Line" })
+    --         map("i", "<C-j>", neocodeium.cycle_or_complete, { desc = "NeoCodeium Cycle" })
+    --         map("i", "<C-k>", function() neocodeium.cycle_or_complete(-1) end, { desc = "NeoCodeium Cycle Backward" })
+    --         map("i", "<C-e>", neocodeium.clear, { desc = "NeoCodeium Clear" })
+    --     end,
+    -- },
 
-            local map = vim.keymap.set
-            map("i", "<C-a>", neocodeium.accept, { desc = "NeoCodeium Accept" })
-            map("i", "<C-w>", neocodeium.accept_word, { desc = "NeoCodeium Accept Word" })
-            map("i", "<C-l>", neocodeium.accept_line, { desc = "NeoCodeium Accept Line" })
-            map("i", "<C-j>", neocodeium.cycle_or_complete, { desc = "NeoCodeium Cycle" })
-            map("i", "<C-k>", function() neocodeium.cycle_or_complete(-1) end, { desc = "NeoCodeium Cycle Backward" })
-            map("i", "<C-e>", neocodeium.clear, { desc = "NeoCodeium Clear" })
-        end,
+    -- Supermaven for AI-assisted completions
+    {
+      "supermaven-inc/supermaven-nvim",
+      config = function()
+        require("supermaven-nvim").setup({
+          keymaps = {
+            accept_suggestion = "<C-a>",
+            clear_suggestion = "<C-e>",
+          }
+        })
+      end,
     },
 }
