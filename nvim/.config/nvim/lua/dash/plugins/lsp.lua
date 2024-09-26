@@ -40,7 +40,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.clangd.setup({})
-			vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { desc = "Hover Docs" })
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Docs" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
 			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format File" })
