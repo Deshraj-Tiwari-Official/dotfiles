@@ -9,31 +9,6 @@ return {
 		harpoon:setup()
 		-- REQUIRED
 
-		-- basic fzf-lua configuration
-		local fzf = require("fzf-lua")
-		local function toggle_fzf(harpoon_files)
-			local file_paths = {}
-			for _, item in ipairs(harpoon_files.items) do
-				table.insert(file_paths, item.value)
-			end
-
-			fzf.fzf_exec(file_paths, {
-				prompt = "Harpoon > ",
-				previewer = false,
-				actions = {
-					["default"] = function(selected)
-						vim.cmd("e " .. selected[1])
-					end,
-				},
-			})
-		end
-
-		-- Use this when you have to fuzzily switch between the harpoon menu entries
-		vim.keymap.set("n", "<C-f>", function()
-			toggle_fzf(harpoon:list())
-		end)
-
-		-- Use this when you have to delete entries in harpoon (dd and :w)
 		vim.keymap.set("n", "<C-e>", function()
 			harpoon.ui:toggle_quick_menu(harpoon:list())
 		end)
