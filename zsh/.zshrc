@@ -40,6 +40,17 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+function s-tmux() {
+  {
+    exec </dev/tty
+    exec <&1
+    local session
+    session=$(sesh list -t -c | fzf --height 40% --reverse --border-label ' sesh ' --border --prompt '⚡  ')
+    [[ -z "$session" ]] && return
+    sesh connect $session
+  }
+}
+
 ### History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -61,6 +72,7 @@ zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 alias ls='ls --color'
 alias tmux='tmux -u'
 alias s='sesh connect $(sesh list | fzf)'
+alias st=s-tmux
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
 alias vim='nvim'
 alias lg='lazygit'
