@@ -15,12 +15,21 @@ return {
 		end,
 	},
 
-	-- Neogit: A Magit clone for Neovim
+  -- LazyGit: A simple git plugin for Neovim for the impatient
 	{
-		"NeogitOrg/neogit",
-		config = true,
+		"kdheepak/lazygit.nvim",
+		cmd = {
+			"LazyGit",
+			"LazyGitConfig",
+			"LazyGitCurrentFile",
+			"LazyGitFilter",
+			"LazyGitFilterCurrentFile",
+		},
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
 		keys = {
-			{ "<leader>ng", "<cmd>Neogit<CR>", desc = "Neogit" },
+			{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 		},
 	},
 }
