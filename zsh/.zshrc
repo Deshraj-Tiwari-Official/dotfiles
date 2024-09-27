@@ -69,7 +69,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' listcolors '${(s.:.)LS_COLORS}'
 
 ### Aliases
-alias ls='ls --color'
+alias ls='eza --icons'
+alias lst='eza -T --icons'
 alias tmux='tmux -u'
 alias s='sesh connect $(sesh list | fzf)'
 alias st=s-tmux
