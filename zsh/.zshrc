@@ -94,3 +94,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
