@@ -6,22 +6,12 @@ This script will is an Arch Linux post install script,that downloads and configu
 > This will download a few packages.
 
 ```bash
-curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/6193018bda7d27c6f89a3c0af082f422ba7edadf/setup.sh | bash
+curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/7872db03e19db1549efc281704c068ce9f4ddb47/setup.sh | bash
 ```
 
-# Setup your dev environment
+# Setup your dev environment with one stow command
+```bash
+stow .
+```
 
-Check out the README.md files of each one to set them up one by one.
-
-1. [Kitty](./kitty/.config/kitty/README.md)
-2. [ZSH](./zsh/README.md)
-3. [Starship](./starship/.config/README.md)
-4. [Tmux](./tmux/.config/tmux/README.md)
-5. [Cava](./cava/.config/cava/README.md)
-6. [Neovim](./nvim/.config/nvim/README.md)
-
-## Hyprland related things
-7. [Hypr](./hypr/.config/hypr/README.md)
-8. [Dunst](./dunst/.config/dunst/README.md)
-9. [Waybar](./waybar/.config/waybar/README.md)
-10. [Wofi](./wofi/.config/wofi/README.md)
+That is it. Happy hacking !!!
