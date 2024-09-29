@@ -76,8 +76,11 @@ alias tmux='tmux -u'
 alias s='sesh connect $(sesh list | fzf)'
 alias st=s-tmux
 alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
-alias vim='nvim'
+alias v='nvim'
 alias lg='lazygit'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 ### Zoxide
 eval "$(zoxide init --cmd cd zsh)"
