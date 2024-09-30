@@ -26,7 +26,7 @@ ls.add_snippets("c", {
 ls.add_snippets("cpp", {
     s("bp", {
         t({"#include <iostream>", ""}),
-        t({"", "using namespace std;"}),
+        t({"", "using namespace std;", ""}),
         t({"", "int main() {"}),
         t({"", "\t"}),
         i(1),
