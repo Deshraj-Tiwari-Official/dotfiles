@@ -7,8 +7,6 @@ local i = ls.insert_node
 ---------  INFO: Snippets for C
 --]]
 
--- TODO: Checkout how to activate this only for .c flies
-
 ls.add_snippets("c", {
     s("bp", {
         t({"#include <stdio.h>", ""}),
@@ -16,6 +14,23 @@ ls.add_snippets("c", {
         t({"", "\t"}),
         i(1),
         t({"", "\tprintf(\"Hello, World!\\n\");"}),
+        t({"", "\treturn 0;"}),
+        t({"", "}"})
+    }),
+})
+
+--[[
+---------  INFO: Snippets for c++
+--]]
+--
+ls.add_snippets("cpp", {
+    s("bp", {
+        t({"#include <iostream>", ""}),
+        t({"", "using namespace std;"}),
+        t({"", "int main() {"}),
+        t({"", "\t"}),
+        i(1),
+        t({"", "\tcout << \"Hello, World!\" << endl;"}),
         t({"", "\treturn 0;"}),
         t({"", "}"})
     }),
