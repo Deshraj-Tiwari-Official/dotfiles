@@ -165,7 +165,7 @@ plugins {
         welcome_screen true
     }
     filepicker location="zellij:strider" {
-        cwd "/"
+        cwd "/home/dash"
     }
 }
 
@@ -175,28 +175,28 @@ session_serialization true
 serialize_pane_viewport true
 welcome_screen true
 
-default_layout "default" // Use default if you want the status bar as well
+default_layout "disable-status-bar" // Use default if you want the status bar as well
 mouse_mode false
 copy_command "wl-copy"
 copy_clipboard "primary" // This means that you can paste using mouse middle click and it does not get copied to the system clipboard. Change to system if you want to copy it to the system clipboard.
 scrollback_editor "/usr/bin/nvim"
 
 themes {
-  catppuccin-mocha {
-    bg "#585b70"
-    fg "#cdd6f4"
-    red "#f38ba8"
-    green "#a6e3a1"
-    blue "#89b4fa"
-    yellow "#f9e2af"
-    magenta "#f5c2e7"
-    orange "#fab387"
-    cyan "#89dceb"
-    black "#181825"
-    white "#cdd6f4"
+ dracula {
+      fg 248 248 242
+      bg 40 42 54
+      black 0 0 0
+      red 255 85 85
+      green 80 250 123
+      yellow 241 250 140
+      blue 98 114 164
+      magenta 255 121 198
+      cyan 139 233 253
+      white 255 255 255
+      orange 255 184 108
   }
 }
-theme "catppuccin-mocha"
+theme "dracula"
 
-// TODO: Check this outin the documentaion if you want custom layouts. Think of it as tmuxinator for zellij but built in.
-// layout_dir "~/.config/zellij/layouts"
+// INFO: Check this outin the documentaion if you want custom layouts. Think of it as tmuxinator for zellij but built in.
+// layot_dir "~/.config/zellij/layouts"
