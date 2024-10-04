@@ -30,8 +30,6 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"clangd",
-          "stylua",
-          "clang-format",
 				},
 			})
 		end,
