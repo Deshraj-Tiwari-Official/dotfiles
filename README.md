@@ -6,7 +6,7 @@ This script will is an Arch Linux post install script,that downloads and configu
 > This will download a few packages.
 
 ```bash
-curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/bb6f484ee73cbc3b4f2b5c62999248800eb10f6d/setup.sh | bash
+curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d2bd21391aa7145f75756b/raw/3afdaf08bd2d586dd4b4e68aaa64f7786c786f11/setup.sh | bash
 ```
 
 # Setup your dev environment with one stow command

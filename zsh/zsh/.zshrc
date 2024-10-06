@@ -81,7 +81,6 @@ alias lg='lazygit'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias zd='zellij -l welcome'
 
 ### Zoxide
 eval "$(zoxide init --cmd cd zsh)"
