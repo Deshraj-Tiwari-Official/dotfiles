@@ -10,7 +10,7 @@ curl -sSL https://gist.githubusercontent.com/Deshraj-Tiwari-Official/cca2335cd4d
 ```
 
 # Setup your dev environment with stow
-> [!INFO]
+> [!NOTE]
 > stow . is for all the configs except zsh and the second command is specifically for zsh as the config file of zsh goes in the root directory.
 ```bash
 stow .
