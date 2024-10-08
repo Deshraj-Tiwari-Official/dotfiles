@@ -42,6 +42,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Go Paths
 export GOROOT="$HOME/go"
+export PATH="$GOROOT/bin:$HOME/dotfiles/GO_SCRIPTS:$PATH"
 
 # fzf Theme
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
