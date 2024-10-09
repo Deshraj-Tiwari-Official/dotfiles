@@ -64,14 +64,10 @@ function yy() {
     rm -f -- "$tmp"
 }
 
-function s-tmux() {
-    exec </dev/tty
-    exec <&1
-    local session
-    session=$(sesh list -t -c | fzf --height 40% --reverse --border-label ' sesh ' --border --prompt '⚡  ')
-    [[ -z "$session" ]] && return
-    sesh connect $session
-}
+# -----------------------------
+# Auto-start tmux session
+# -----------------------------
+[[ -z "$TMUX" ]] && exec tmux
 
 # -----------------------------
 # History Configuration
@@ -110,9 +106,8 @@ alias fbn='nvim $(fzf -m --preview="bat --color=always {}")'
 
 ### Session Management
 alias tmux='tmux -u'
-alias s='sesh connect $(sesh list | fzf)'
-alias st=s-tmux
 alias zd='zellij -l welcome'
+alias tms='~/dotfiles/tmux/scripts/tmux-sessionizer.sh'
 
 ### Other Tools
 alias lg='lazygit'
