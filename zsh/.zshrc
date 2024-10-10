@@ -41,8 +41,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Load nvm bash_completion
 
 # Go Paths
-export GOROOT="$HOME/go"
-export PATH="$GOROOT/bin:$HOME/dotfiles/GO_SCRIPTS:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+
+# My executables
+export PATH="$HOME/dotfiles/SCRIPTS:$PATH"
 
 # fzf Theme
 export FZF_DEFAULT_OPTS="
