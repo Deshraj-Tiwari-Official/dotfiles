@@ -115,14 +115,13 @@ alias tms='~/dotfiles/tmux/scripts/tmux-sessionizer.sh'
 alias lg='lazygit'
 
 # -----------------------------
-# Zoxide and Starship
+# Zoxide, Atuin, and Starship
 # -----------------------------
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
 
 # -----------------------------
-# Homebrew and Atuin
+# Others
 # -----------------------------
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh)"
+
