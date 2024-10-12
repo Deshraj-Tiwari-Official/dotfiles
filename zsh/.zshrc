@@ -119,6 +119,7 @@ alias lg='lazygit'
 # -----------------------------
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
+. "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
 
 # -----------------------------
