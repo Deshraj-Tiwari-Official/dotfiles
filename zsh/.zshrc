@@ -43,9 +43,6 @@ export NVM_DIR="$HOME/.nvm"
 # Go Paths
 export PATH=$PATH:/usr/local/go/bin
 
-# My executables
-export PATH="$HOME/dotfiles/SCRIPTS:$PATH"
-
 # fzf Theme
 export FZF_DEFAULT_OPTS="
   --color=fg:#BABBF1,fg+:#d0d0d0,bg:-1,bg+:#262626
