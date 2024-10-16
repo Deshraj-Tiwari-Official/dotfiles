@@ -32,6 +32,7 @@ fi
 echo -e "${bold}${magenta}- Installing development tools...${reset}"
 paru -S --noconfirm stow btop zoxide fzf bat yazi nerdfetch ripgrep ttf-jetbrains-mono hyprpaper tmux sesh-bin eza hyprlock lazygit clipman hyprpicker hypridle pavucontrol brightnessctl power-profiles-daemon xdg-desktop-portal-wlr neovim zsh kitty starship cava hyprland dunst waybar wofi
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Apply Catppuccin Mocha theme to Bat
 echo -e "${bold}${magenta}- Applying Catppuccin Mocha theme to Bat...${reset}"
