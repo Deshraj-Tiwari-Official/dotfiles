@@ -38,8 +38,8 @@
   "battery": {
     "states": {
       "good": 95,
-      "warning": 30,
-      "critical": 15,
+      "decent": 60,
+      "critical": 20,
     },
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% ",

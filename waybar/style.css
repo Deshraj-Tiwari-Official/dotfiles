@@ -82,18 +82,23 @@ button:hover {
   color: #e0e0e0;
 }
 
-#battery {
-  background-color: #444444;
-}
-
+#battery,
+#battery.good,
 #battery.charging,
 #battery.plugged {
-  background-color: #444444;
+  color: black;
+  background-color: #A0E6A1;
+}
+
+#battery.decent {
+  background-color: #FFB84D;
+}
+#battery.warning {
+  background-color: #A0D3E6;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #444444;
-  animation: none;
+  background-color: #FF6F61;
 }
 
 #backlight {
