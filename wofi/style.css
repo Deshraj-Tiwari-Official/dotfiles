@@ -22,6 +22,10 @@ window {
     color: #D9E0EE;
 }
 
+#entry {
+    border: 1px solid lightgray;
+}
+
 #entry:selected {
     background-color: #6a2dbd;
     color: #1E1E2E;
